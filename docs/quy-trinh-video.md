@@ -99,6 +99,7 @@ NT005 The Wise Old Owl, NT055 Through the Train Window, NT058 The Old Woman Who 
 
 - Xuất cả hai khổ: ngang 16:9 (YouTube) và dọc 9:16 (Shorts, TikTok, Reels).
 - Định hướng mới: làm thành webapp white label. Người dùng tự kết nối API key của họ (ElevenLabs và các dịch vụ khác), tự nhập dữ liệu truyện, tự đưa ảnh và bộ nhận diện của họ vào. E-WIT là khách hàng đầu tiên. Kiến trúc đang thiết kế, xem phần câu hỏi còn mở.
+- Mô hình sử dụng thực tế: nhiều người cùng đóng góp (phụng sự) làm bản đầu tiên cho E-WIT theo cùng một format; sau đó họ được cải biên nội dung và làm video riêng cho kênh của mình bằng chính công cụ này. Công cụ là một trang dùng chung cho nhiều người, mỗi người có bộ nhận diện riêng.
 
 ## Câu hỏi còn mở
 
