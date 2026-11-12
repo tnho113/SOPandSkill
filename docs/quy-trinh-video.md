@@ -95,6 +95,11 @@ NT005 The Wise Old Owl, NT055 Through the Train Window, NT058 The Old Woman Who 
 - Phụ đề karaoke: tô sáng từng từ đúng lúc giọng đọc, để người học shadowing nhìn theo.
 - Mượn ý tưởng từ OpenMontage (github.com/OpenMontageInc/OpenMontage): cách gọi ElevenLabs with-timestamps, cách dựng phụ đề karaoke, và Remotion nếu sau này cần video sinh động hơn. OpenMontage dùng giấy phép AGPLv3: nếu chép nguyên mã của họ vào repo thì phải ghi nguồn và giữ giấy phép AGPL cho phần đó; tự viết lại theo ý tưởng thì không bị ràng buộc này.
 
+### Khổ video và định hướng sản phẩm (chốt 12/11/2026)
+
+- Xuất cả hai khổ: ngang 16:9 (YouTube) và dọc 9:16 (Shorts, TikTok, Reels).
+- Định hướng mới: làm thành webapp white label. Người dùng tự kết nối API key của họ (ElevenLabs và các dịch vụ khác), tự nhập dữ liệu truyện, tự đưa ảnh và bộ nhận diện của họ vào. E-WIT là khách hàng đầu tiên. Kiến trúc đang thiết kế, xem phần câu hỏi còn mở.
+
 ## Câu hỏi còn mở
 
 1. Trình độ người học mục tiêu: A2-B1 hay B1-B2? Quyết định độ dài câu và cách chọn từ.
