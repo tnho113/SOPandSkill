@@ -88,6 +88,13 @@ NT005 The Wise Old Owl, NT055 Through the Train Window, NT058 The Old Woman Who 
 - Ước tính khoảng 1.000 đến 1.100 credit mỗi truyện (suy luận, chưa đo thực tế).
 - API key để trong secrets của môi trường, không dán vào chat.
 
+### Hướng xây dựng skill video (chốt 12/11/2026)
+
+- Tự viết một skill gọn cho E-WIT, không dùng OpenMontage làm nền. Lý do: OpenMontage để AI tự viết kịch bản và dừng chờ duyệt ở nhiều bước, trong khi E-WIT đã có bản tiếng Anh chính thức và cần chạy hàng loạt khoảng 500 truyện.
+- Luồng xử lý: đọc tab "Bản tiếng Anh" → tạo audio từng câu bằng ElevenLabs theo mã giọng của vai → lấy thời điểm từng từ (endpoint with-timestamps) → dựng khung hình (câu, IPA, logo) → ghép bằng ffmpeg → xuất video và SRT.
+- Phụ đề karaoke: tô sáng từng từ đúng lúc giọng đọc, để người học shadowing nhìn theo.
+- Mượn ý tưởng từ OpenMontage (github.com/OpenMontageInc/OpenMontage): cách gọi ElevenLabs with-timestamps, cách dựng phụ đề karaoke, và Remotion nếu sau này cần video sinh động hơn. OpenMontage dùng giấy phép AGPLv3: nếu chép nguyên mã của họ vào repo thì phải ghi nguồn và giữ giấy phép AGPL cho phần đó; tự viết lại theo ý tưởng thì không bị ràng buộc này.
+
 ## Câu hỏi còn mở
 
 1. Trình độ người học mục tiêu: A2-B1 hay B1-B2? Quyết định độ dài câu và cách chọn từ.
@@ -107,4 +114,4 @@ NT005 The Wise Old Owl, NT055 Through the Train Window, NT058 The Old Woman Who 
 1. Người dùng chọn 8 giọng trên ElevenLabs, điền mã vào tab "Bộ vai giọng".
 2. Chốt bản chính thức 3 truyện mẫu và các cột shadowing.
 3. Chuẩn bị bộ nhận diện thương hiệu.
-4. Viết skill truyện thành video, chạy thử 3 truyện mẫu rồi mới chạy cả lô.
+4. Viết skill truyện thành video theo hướng đã chốt ở trên, chạy thử 3 truyện mẫu rồi mới chạy cả lô.
